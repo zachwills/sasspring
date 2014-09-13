@@ -3,15 +3,8 @@
    ========================================================================== */
 
 /**
- * Pure JavaScript Start
- */
-// window.ready(function() {
-	
-// });
-
-/**
  * jQuery Start
  */
-// jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
 	
-// });
+});
