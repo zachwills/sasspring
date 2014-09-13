@@ -10,17 +10,17 @@
 
 /* Mixins
    ========================================================================== */
-@import 'ui/mixins/spacing';
+@import 'mixins/spacing';
 
 
 /* Bootstrap
    ========================================================================== */
-@import 'vendor/bootstrap';
+@import 'vendor/bootstrap/bootstrap';
 
 
 /* Partials
    ========================================================================== */
-@import 'ui/partials/placeholder';
-@import 'ui/partials/form';
-@import 'ui/partials/typography';
-@import 'ui/partials/layout';
+@import 'ui/placeholder';
+@import 'ui/form';
+@import 'ui/typography';
+@import 'ui/layout';

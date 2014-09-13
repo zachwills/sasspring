@@ -44,11 +44,22 @@
 					padding-#{$side}: $spacing-size;;
 				}
 
+				%#{$type}--#{$side} {
+					padding-#{$side}: $spacing-size;;
+				}
+
 				/* special case*/
 				%#{$type}-#{$size}--ends {
 					padding: $spacing-size inherit;
 				}
 				%#{$type}-#{$size}--sides {
+					padding: inherit $spacing-size;
+				}
+
+				%#{$type}--ends {
+					padding: $spacing-size inherit;
+				}
+				%#{$type}--sides {
 					padding: inherit $spacing-size;
 				}
 
