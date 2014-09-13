@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Placeholder SASS (invisible classes)
+   ========================================================================== */
+
+/**
+ * This file is filled with invisible classes that are defined when there is
+ * more than one class using the same exact property. This results in less
+ * CSS bloat.
+ *
+ * Invisible styles should be defined in a predictable way. 
+ *   - Begin with the name of the property and follow B.E.M style modifiers that
+ *   define what you are doing with the property.
+ *   - Opt for verbose names over shorthand. (background over bg)
+ *   - Use single line for single properties, and multi-line for multiple
+ *     properties
+ * 
+ * For example: 
+ *   %margin--left { margin-left: $base-spacing-unit }
+ *   %display--block { display: block; }
+ *   %position--rel { position: relative; }
+ */
+
+/* Padding & Margin (custom mixin)
+   ========================================================================== */
+@include spacing;
+
+
+/* Background
+   ========================================================================== */
+%background-size--cover { background-size: cover; }
+%background--white { background-color: white }
+
+
+/* Display
+   ========================================================================== */
+%display-block { display: block; }
+%display-inline-block { display: inline-block; }
+%display-inline { display: inline; }
+
+
+/* Position
+   ========================================================================== */
+%position-absolute { position: absolute; }
+%position-relative { position: relative; }
+%position-static { position: static; }

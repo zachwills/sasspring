@@ -1,1 +1,3 @@
-SASSpring is still under development. Check out the dev branch for the latest development release.
+SASSpring is still under development
+
+Let's do this!

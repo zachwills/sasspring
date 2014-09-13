@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Spacing Mixins
+   ========================================================================== */
+
+/**
+ * Spacing mixin loops through all of the sizes (set in the ui/variables file)
+ * and generates all the inivisble classes for margins and paddings.
+ */
+
+@mixin spacing($sides: (top, left, bottom, right), $types: (margin, padding)) {
+
+	/* 
+	 * Loop through each type
+	 *
+	 * e.g. margin, padding
+	 */
+	@each $type in $types {
+
+		/* 
+		 * Loop through each size
+		 *
+		 * e.g. xs, small, large
+		 */
+		@each $size in $spacing-size-names {
+
+			/* get the index of the current item in the loop */
+			$i: index($spacing-size-names, $size);
+
+			/* get the spacing size for whichever size name we are on */
+			$spacing-size: nth($spacing-sizes, $i);
+
+			/* Base padding for each size */
+			%#{$type}--#{$size} { #{$type}: $spacing-size; }
+
+			/* 
+			 * Loop through each side and create the class for it
+			 *
+			 * e.g. padding-left: $amount, padding-right: $amount
+			 */
+			@each $side in $sides {
+
+				/* standard */
+				%#{$type}-#{$size}--#{$side} {
+					padding-#{$side}: $spacing-size;;
+				}
+
+				/* special case*/
+				%#{$type}-#{$size}--ends {
+					padding: $spacing-size inherit;
+				}
+				%#{$type}-#{$size}--sides {
+					padding: inherit $spacing-size;
+				}
+
+			} // sides
+
+		} // sizes
+		
+	} // types
+
+} // spacing
