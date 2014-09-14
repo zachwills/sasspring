@@ -1,6 +1,10 @@
 # SASSpring (in development)
 
-Spring into your new Bootstrap SASS projects with this out-of-your-way file & folder structure. All of Bootstrap's SASS is available, however only the bare minimum (grid & defaults) is imported by default.
+An opinionated wrapper for Bootstrap (v3.2.0) that promotes clean and organized code.
+
+## Why create a wrapper for Bootstrap?
+
+I had been in many scenarios in the past where I needed to build out a new site. I usually passed over using Bootstrap because of how large it was, and opted for something more focused. I came to the conclusion that I wanted to be able to utilize Bootstrap and (some) of it's powerful features in a way that didn't bloat my site or require a custom download every time. I wanted a Bootstrap 'springboard' that I could use to jump headfirst into new projects. As a result, SASSpring was born.
 
 ## Inspiration
 * [Drew Bolles](http://drewbolles.com/)
