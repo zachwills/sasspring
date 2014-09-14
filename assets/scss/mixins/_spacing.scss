@@ -19,6 +19,18 @@
 		/* e.g. %padding { padding: $spacing-base }  */
 		%#{$type} { #{$type}: $spacing-base; }
 
+		/* e.g. %padding--ends */
+		%#{$type}--ends {
+			padding-top: $spacing-base;
+			padding-bottom: $spacing-base;
+		}
+
+		/* e.g. %padding--sides */
+		%#{$type}--sides {
+			padding-left: $spacing-base;
+			padding-right: $spacing-base;
+		}
+
 		/* 
 		 * Loop through each size
 		 *
@@ -35,6 +47,18 @@
 			/* Base padding for each size */
 			%#{$type}--#{$size} { #{$type}: $spacing-size; }
 
+			/* e.g. %padding-large--ends */
+			%#{$type}-#{$size}--ends {
+				padding-top: $spacing-size;
+				padding-bottom: $spacing-size;
+			}
+
+			/* e.g. %padding-large--sides */
+			%#{$type}-#{$size}--sides {
+				padding-left: $spacing-size;
+				padding-right: $spacing-size;
+			}
+
 			/* 
 			 * Loop through each side and create the class for it
 			 *
@@ -50,26 +74,6 @@
 				/* e.g. %padding--top */
 				%#{$type}--#{$side} {
 					padding-#{$side}: $spacing-size;;
-				}
-
-				/* e.g. %padding-large--ends */
-				%#{$type}-#{$size}--ends {
-					padding: $spacing-size inherit;
-				}
-
-				/* e.g. %padding-large--sides */
-				%#{$type}-#{$size}--sides {
-					padding: inherit $spacing-size;
-				}
-
-				/* e.g. %padding--ends */
-				%#{$type}--ends {
-					padding: $spacing-size inherit;
-				}
-
-				/* e.g. %padding--sides */
-				%#{$type}--sides {
-					padding: inherit $spacing-size;
 				}
 
 			} // sides
