@@ -33,13 +33,24 @@
 
 /* Display
    ========================================================================== */
-%display-block { display: block; }
-%display-inline-block { display: inline-block; }
+%display--block { display: block; }
+%display--inline-block { display: inline-block; }
 %display-inline { display: inline; }
 
 
 /* Position
    ========================================================================== */
-%position-absolute { position: absolute; }
-%position-relative { position: relative; }
-%position-static { position: static; }
+%position--absolute { position: absolute; }
+%position--relative { position: relative; }
+%position--static { position: static; }
+
+
+/* Text related
+   ========================================================================== */
+%color--white { color: white; }
+%color--brand { color: $color-brand; }
+%color--text { color: $text-color; }
+
+%align--left { text-align: left; }
+%align--right { text-align: right; }
+%align--center { text-align: center; }
