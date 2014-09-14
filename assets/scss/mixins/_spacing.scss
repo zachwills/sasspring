@@ -16,6 +16,9 @@
 	 */
 	@each $type in $types {
 
+		/* e.g. %padding { padding: $spacing-base }  */
+		%#{$type} { #{$type}: $spacing-base; }
+
 		/* 
 		 * Loop through each size
 		 *
@@ -39,26 +42,32 @@
 			 */
 			@each $side in $sides {
 
-				/* standard */
+				/* e.g. %padding-large--top */
 				%#{$type}-#{$size}--#{$side} {
 					padding-#{$side}: $spacing-size;;
 				}
 
+				/* e.g. %padding--top */
 				%#{$type}--#{$side} {
 					padding-#{$side}: $spacing-size;;
 				}
 
-				/* special case*/
+				/* e.g. %padding-large--ends */
 				%#{$type}-#{$size}--ends {
 					padding: $spacing-size inherit;
 				}
+
+				/* e.g. %padding-large--sides */
 				%#{$type}-#{$size}--sides {
 					padding: inherit $spacing-size;
 				}
 
+				/* e.g. %padding--ends */
 				%#{$type}--ends {
 					padding: $spacing-size inherit;
 				}
+
+				/* e.g. %padding--sides */
 				%#{$type}--sides {
 					padding: inherit $spacing-size;
 				}
