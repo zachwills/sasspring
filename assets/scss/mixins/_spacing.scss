@@ -32,9 +32,21 @@
 		}
 
 		/* 
+		 * Loop through each side and create the class for it
+		 *
+		 * e.g. padding--left: $amount
+		 */
+		@each $side in $sides {
+			/* e.g. %padding--top */
+			%#{$type}--#{$side} {
+				padding-#{$side}: $spacing-base;
+			}
+		}
+
+		/* 
 		 * Loop through each size
 		 *
-		 * e.g. xs, small, large
+		 * e.g. double, triple, half, quarter
 		 */
 		@each $size in $spacing-size-names {
 
@@ -45,7 +57,7 @@
 			$spacing-size: nth($spacing-sizes, $i);
 
 			/* Base padding for each size */
-			%#{$type}--#{$size} { #{$type}: $spacing-size; }
+			%#{$type}-#{$size} { #{$type}: $spacing-size; }
 
 			/* e.g. %padding-large--ends */
 			%#{$type}-#{$size}--ends {
@@ -68,12 +80,7 @@
 
 				/* e.g. %padding-large--top */
 				%#{$type}-#{$size}--#{$side} {
-					padding-#{$side}: $spacing-size;;
-				}
-
-				/* e.g. %padding--top */
-				%#{$type}--#{$side} {
-					padding-#{$side}: $spacing-size;;
+					padding-#{$side}: $spacing-size;
 				}
 
 			} // sides

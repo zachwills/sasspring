@@ -10,17 +10,33 @@
  * have a custom variable to base them off.
  */
 $spacing-base: 14px;
-$spacing-large-base: $spacing-base*2;
-$spacing-small-base: $spacing-base/2;
-$spacing-xs-base: $spacing-small-base/2;
+$spacing-double: $spacing-base*2;
+$spacing-triple: $spacing-base*3;
+$spacing-half: $spacing-base/2;
+$spacing-quarter: $spacing-half/2;
 
 /* 
  * Make sure you keep the names & sizes consistent. You can add as many spacing 
  * sizes as you feel necessary
  */
-$spacing-size-names: (xs, small, large);
-$spacing-sizes: ($spacing-xs-base, $spacing-small-base, $spacing-large-base);
+$spacing-size-names: (double, triple, half, quarter);
+$spacing-sizes: ($spacing-double, $spacing-triple, $spacing-half, $spacing-quarter);
 
+/* Custom Breakpoints collection
+   ========================================================================== */
+$breakpoints: (xs, sm, md, lg);
+
+/* Screen sizes (by default equal to Bootstrap's defaults) */
+$screen-xs-max: 767px;
+$screen-sm-max: 991px;
+$screen-md-max: 1199px;
+$screen-lg-max: 9999px;
+
+$breakpoint-widths: ($screen-xs-max, $screen-sm-max, $screen-md-max, $screen-lg-max);
+
+/* Custom Color Variables
+   ========================================================================== */
+$color-brand: #B4D455;
 
 /* Bootstrap Typography overwrites
    ========================================================================== */
@@ -32,14 +48,14 @@ $font-size-base: 16px;
 $padding-base-vertical: $spacing-base;
 $padding-base-horizontal: $spacing-base;
 
-$padding-large-vertical: $spacing-large-base;
-$padding-large-horizontal: $spacing-large-base;
+$padding-large-vertical: $spacing-double;
+$padding-large-horizontal: $spacing-double;
 
-$padding-small-vertical: $spacing-large-base;
-$padding-small-horizontal: $spacing-large-base;
+$padding-small-vertical: $spacing-half;
+$padding-small-horizontal: $spacing-half;
 
-$padding-xs-vertical: $spacing-xs-base;
-$padding-xs-horizontal: $spacing-xs-base;
+$padding-xs-vertical: $spacing-quarter;
+$padding-xs-horizontal: $spacing-quarter;
 
 $line-height-large: 1.33;
 $line-height-small: 1.5;
