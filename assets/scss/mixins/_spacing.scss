@@ -19,16 +19,29 @@
 		/* e.g. %padding { padding: $spacing-base }  */
 		%#{$type} { #{$type}: $spacing-base; }
 
+		/* e.g. %padding-none { padding: 0 }  */
+		%#{$type}-none { #{$type}: 0; }
+
 		/* e.g. %padding--ends */
 		%#{$type}--ends {
 			padding-top: $spacing-base;
 			padding-bottom: $spacing-base;
 		}
 
+		%#{$type}-none--ends {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
 		/* e.g. %padding--sides */
 		%#{$type}--sides {
 			padding-left: $spacing-base;
 			padding-right: $spacing-base;
+		}
+
+		%#{$type}-none--sides {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		/* 
