@@ -4,7 +4,13 @@ An opinionated wrapper by [Zach Wills](http://zachwills.net/) for Bootstrap (v3.
 
 ## Getting Started
 
-Coming soon
+Once you pull down the project, run `npm install` so that you get all of the Grunt modules you need to be able to preprocess your SCSS. Once they install, `cd` into the `assets` directory and run `grunt` to begin watching your files.
+
+For more in depth information, check out the wiki (coming soon).
+
+## Style Guide
+
+[Idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 
 ## Why create a wrapper for Bootstrap?
 
@@ -12,7 +18,6 @@ I usually passed over using Bootstrap when I began new projects because of how l
 
 ## Inspiration
 * [Drew Bolles](http://drewbolles.com/)
-* [Idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 * [Harry Roberts](http://csswizardry.com/)
 
 ## License
