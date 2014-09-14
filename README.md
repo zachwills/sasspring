@@ -1,6 +1,6 @@
 # SASSpring (in development)
 
-An opinionated wrapper for Bootstrap (v3.2.0) that promotes clean and organized code.
+An opinionated wrapper by [Zach Wills](http://zachwills.net/) for Bootstrap (v3.2.0) that promotes clean and organized code.
 
 ## Getting Started
 
