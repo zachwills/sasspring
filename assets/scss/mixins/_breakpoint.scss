@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Media Query Mixins
+   ========================================================================== */
+
+/**
+ * Breakpoint mixin loops through all of the breakpoints (set in the
+ * ui/variables file) and creates an easier way to set styles for them.
+ */
+@mixin breakpoint($breakpoint) {
+
+	/* Get the index of the breakpoint in the list */
+	$i: index($breakpoints, $breakpoint);
+
+	/* Get the width of specific breakpoint */
+	$breakpoint-width: nth($breakpoint-widths, $i);
+
+	/* Create media query */
+	@media (min-width:#{$breakpoint-width}) {
+		@content;
+	}
+}

@@ -26,17 +26,17 @@ $spacing-sizes: ($spacing-double, $spacing-triple, $spacing-half, $spacing-quart
    ========================================================================== */
 $breakpoints: (xs, sm, md, lg);
 
-/* Screen sizes (by default equal to Bootstrap's defaults) */
-$screen-xs-max: 767px;
-$screen-sm-max: 991px;
-$screen-md-max: 1199px;
-$screen-lg-max: 9999px;
+/* Screen size overwrites (by default equal to Bootstrap's defaults) */
+$screen-xs-min: 480px; // iPad Mini
+$screen-sm-min: 768px; // iPad
+$screen-md-min: 992px; // Small desktop (like 1024x768ish)
+$screen-lg-min: 1200px; // Full desktop
 
-$breakpoint-widths: ($screen-xs-max, $screen-sm-max, $screen-md-max, $screen-lg-max);
+$breakpoint-widths: ($screen-xs-min, $screen-sm-min, $screen-md-min, $screen-lg-min);
 
 /* Custom Color Variables
    ========================================================================== */
-$color-brand: #B4D455;
+$brand-color: #B4D455;
 
 /* Bootstrap Typography overwrites
    ========================================================================== */
