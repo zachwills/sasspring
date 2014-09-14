@@ -29,6 +29,7 @@
    ========================================================================== */
 %background-size--cover { background-size: cover; }
 %background--white { background-color: white }
+%background-position--top-center { background-position: top center; }
 
 
 /* Display
@@ -48,7 +49,7 @@
 /* Text related
    ========================================================================== */
 %color--white { color: white; }
-%color--brand { color: $color-brand; }
+%color--brand { color: $brand-color; }
 %color--text { color: $text-color; }
 
 %align--left { text-align: left; }
