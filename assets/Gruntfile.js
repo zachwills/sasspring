@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'compressed',
+					style: 'uncompressed',
 					compass: true
 				},
 				files: {
@@ -18,9 +18,9 @@ module.exports = function(grunt) {
 			},
 		},
 		uglify: {
-			my_target: {
+			dist: {
 				files: {
-					'js/scripts.min.js': ['js/global.js']
+					'scripts.min.js': ['js/vendor/jquery-1.11.1.min.js', 'js/global.js']
 				}
 			}
 		},
@@ -30,9 +30,7 @@ module.exports = function(grunt) {
 				tasks: ['sass', 'autoprefixer']
 			},
 			js: {
-				files: {
-					'js/scripts.min.js': ['js/lazyload.min.js', 'js/global.js']
-				},
+				files: 'js/*.js',
 				tasks: ['uglify']
 			}
 		},
@@ -41,5 +39,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['sass', 'uglify', 'watch']);
 }

@@ -1,3 +1,8 @@
+# grunt modules
 assets/node_modules
-assets/.sass-cache
 npm-debug.log
+
+# grunt compiled files
+assets/.sass-cache
+assets/screen.css
+assets/scripts.min.js
