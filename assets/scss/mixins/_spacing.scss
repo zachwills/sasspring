@@ -54,6 +54,10 @@
 			%#{$type}--#{$side} {
 				#{$type}-#{$side}: $spacing-base;
 			}
+
+			%#{$type}-none--#{$side} {
+				#{$type}-#{$side}: 0;
+			}
 		}
 
 		/* 
