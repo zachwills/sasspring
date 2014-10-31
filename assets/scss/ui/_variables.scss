@@ -18,9 +18,12 @@ $spacing-quarter: $spacing-half/2;
 /* 
  * Make sure you keep the names & sizes consistent. You can add as many spacing 
  * sizes as you feel necessary
+ *
+ * @TODO: Use SASS Maps instead
  */
 $spacing-size-names: (double, triple, half, quarter);
 $spacing-sizes: ($spacing-double, $spacing-triple, $spacing-half, $spacing-quarter);
+
 
 /* Custom Breakpoints collection
    ========================================================================== */
@@ -32,11 +35,16 @@ $screen-sm-min: 768px; // iPad
 $screen-md-min: 992px; // Small desktop (like 1024x768ish)
 $screen-lg-min: 1200px; // Full desktop
 
+/**
+ * @TODO: Use SASS Maps instead
+ */
 $breakpoint-widths: ($screen-xs-min, $screen-sm-min, $screen-md-min, $screen-lg-min);
+
 
 /* Custom Color Variables
    ========================================================================== */
 $brand-color: #B4D455;
+
 
 /* Bootstrap Typography overwrites
    ========================================================================== */
