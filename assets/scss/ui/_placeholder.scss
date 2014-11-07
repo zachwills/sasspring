@@ -15,7 +15,6 @@
  *     properties
  * 
  * For example: 
- *   %margin--left { margin-left: $base-spacing-unit }
  *   %display--block { display: block; }
  *   %position--rel { position: relative; }
  */
@@ -28,7 +27,6 @@
 /* Background
    ========================================================================== */
 %background-size--cover { background-size: cover; }
-%background--white { background-color: white }
 %background-position--top-center { background-position: top center; }
 
 
@@ -36,7 +34,8 @@
    ========================================================================== */
 %display--block { display: block; }
 %display--inline-block { display: inline-block; }
-%display-inline { display: inline; }
+%display--inline { display: inline; }
+%display--none { display: none; }
 
 
 /* Position
@@ -46,14 +45,23 @@
 %position--static { position: static; }
 
 
+/* Float
+   ========================================================================== */
+%float--left { float: left; }
+%float--right { float: right; }
+
+
 /* Text related
    ========================================================================== */
 %color--white { color: white; }
-%color--brand { color: $brand-color; }
-%color--text { color: $text-color; }
+%color--brand { color: $color-brand; }
+%color--text { color: $color-text; }
+%color--primary { color: $color-primary; }
+%color--secondary { color: $color-secondary; }
 
 %text-align--left { text-align: left; }
 %text-align--right { text-align: right; }
 %text-align--center { text-align: center; }
 
 %text-transform--uppercase { text-transform: uppercase; }
+%text-transform--lowercase { text-transform: lowercase; }
