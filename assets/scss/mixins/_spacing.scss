@@ -100,8 +100,6 @@
 					#{$type}-#{$side}: $spacing-size;
 				}
 
-				%#{$type}-#{$side}--none { #{$type}-#{$side}: 0; }
-
 			} // sides
 
 		} // sizes
