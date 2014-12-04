@@ -29,6 +29,10 @@
 %background-size--cover { background-size: cover; }
 %background-position--top-center { background-position: top center; }
 
+%background-color--brand { background-color: $color-brand; }
+%background-color--primary { background-color: $color-primary; }
+%background-color--secondary { background-color: $color-secondary; }
+
 
 /* Display
    ========================================================================== */
@@ -58,6 +62,12 @@
 %color--text { color: $color-text; }
 %color--primary { color: $color-primary; }
 %color--secondary { color: $color-secondary; }
+
+%font-size--base { font-size: $font-size-base; }
+%line-height--base { line-height: $line-height-base; }
+
+%font-family--base { font-family: $font-family-base; }
+%font-family--heading { font-family: $headings-font-family; }
 
 %text-align--left { text-align: left; }
 %text-align--right { text-align: right; }

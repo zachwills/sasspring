@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Content classes
+   ========================================================================== */
+
+/**
+ * Content classes are used to describe sections with content inside them. Uses
+ * include spacing, alternative looks (light bg, dark bg, etc)
+ */
+
+/* Content Spaces
+   ========================================================================== */
+
+.content {
+	@extend %padding--ends;
+}
+
+.content-half {
+	@extend %padding-half--ends;
+}
+
+.content-quarter {
+	@extend %padding-quarter--ends;
+}
+
+.content-double {
+	@extend %padding-double--ends;
+}

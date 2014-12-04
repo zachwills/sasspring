@@ -2,7 +2,7 @@
    Site Variables
    ========================================================================== */
 
-/* Custom Spacing variables 
+/* Spacing 
    ========================================================================== */
 
 /**
@@ -14,6 +14,8 @@ $spacing-double: $spacing-base*2;
 $spacing-triple: $spacing-base*3;
 $spacing-half: $spacing-base/2;
 $spacing-quarter: $spacing-half/2;
+
+$grid-gutter-width: $spacing-base;
 
 /* 
  * Make sure you keep the names & sizes consistent. You can add as many spacing 
@@ -41,19 +43,30 @@ $screen-lg-min: 1200px; // Full desktop
 $breakpoint-widths: ($screen-xs-min, $screen-sm-min, $screen-md-min, $screen-lg-min);
 
 
-/* Custom Color Variables
+/* Color
    ========================================================================== */
 $color-brand: #B4D455;
 $color-primary: #B44B44;
 $color-secondary: #D44D44;
 $color-text: #333333;
 
-/* Bootstrap Typography overwrites
+/* Typography
    ========================================================================== */
 $font-size-base: 16px;
 
+$line-height-base: 1.428571429;
 
-/* Bootstrap Spacing overwrites
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
+/* Spacing
    ========================================================================== */
 $padding-base-vertical: $spacing-base;
 $padding-base-horizontal: $spacing-base;
@@ -66,9 +79,6 @@ $padding-small-horizontal: $spacing-half;
 
 $padding-xs-vertical: $spacing-quarter;
 $padding-xs-horizontal: $spacing-quarter;
-
-$line-height-large: 1.33;
-$line-height-small: 1.5;
 
 $border-radius-base: 4px;
 $border-radius-large: 6px;
