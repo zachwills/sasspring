@@ -1,4 +1,4 @@
-# SASSpring (in development)
+# SASSpring
 
 An opinionated wrapper by [Zach Wills](http://zachwills.net/) for Bootstrap (v3.3.0) that promotes clean and organized code.
 
